@@ -13,7 +13,9 @@ const Message: React.FC<Props> = ({ data, users }) => {
     <div className={`flex w-full mb-3 px-4 ${isMyMessage() ? ' justify-end' : ' justify-start'}`}>
       <div className={`box-message relative ${isMyMessage() ? ' my-message' : ''}`}>
         {!isMyMessage() && (
-          <h1 className="text-sm text-blue-600 font-bold">{users[data.userUID].name}</h1>
+          <h1 className="text-sm font-bold" style={{ color: users[data.userUID].color }}>
+            {users[data.userUID].name}
+          </h1>
         )}
         <p className={`text-xs text-white pr-12 ${isMyMessage() ? '' : ' pt-2 pb-1'}`}>
           {data.message}
