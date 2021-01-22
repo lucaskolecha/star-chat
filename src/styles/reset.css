@@ -144,3 +144,20 @@
   .overflow-ellipsis {
     text-overflow: ellipsis;
   }
+  
+  ::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+   }
+   ::-webkit-scrollbar-thumb {
+    background: linear-gradient(13deg, #bfbfbf 14%,#949494 64%);
+    border-radius: 10px;
+   }
+   ::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(13deg, #757575 14%,#737373 64%);
+   }
+   ::-webkit-scrollbar-track{
+    background: #a3a3a3;
+    border-radius: 10px;
+    box-shadow: inset 7px 10px 12px #f0f0f0;
+   }

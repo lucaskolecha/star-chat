@@ -6,7 +6,7 @@ const ChatContainer: React.FC = ({ children }) => {
   return (
     <>
       {/* <div className="h-32 bg-primary w-full absolute" /> */}
-      <div className="container flex flex-1 relative mx-auto py-10">
+      <div className="container flex flex-1 relative mx-auto py-10 max-h-screen">
         <div className="flex flex-row flex-1 w-full bg-alternative rounded-md overflow-hidden shadow-chat">
           {children}
         </div>
