@@ -11,10 +11,12 @@
     "axios": "^0.21.1",
     "firebase": "^8.2.3",
     "moment": "^2.29.1",
-    "tailwindcss": "^2.0.2",
     "next": "10.0.5",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-preset-env": "^6.7.0",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "tailwindcss": "1.9.6"
   },
   "devDependencies": {
     "@types/node": "^14.14.21",
