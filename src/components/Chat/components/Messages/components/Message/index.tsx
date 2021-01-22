@@ -15,8 +15,10 @@ const Message: React.FC<Props> = ({ data, users }) => {
         {!isMyMessage() && (
           <h1 className="text-sm text-blue-600 font-bold">{users[data.userUID].name}</h1>
         )}
-        <p className={`text-xs text-white pr-12 ${isMyMessage() ? '' : ' pb-1'}`}>{data.message}</p>
-        <span className="text-xs absolute bottom-1 right-2 font-bold text-white">
+        <p className={`text-xs text-white pr-12 ${isMyMessage() ? '' : ' pt-2 pb-1'}`}>
+          {data.message}
+        </p>
+        <span className="text-xs absolute bottom-1 right-1 font-bold text-white">
           {moment(data.sendTime).format('HH:mm')}
         </span>
       </div>

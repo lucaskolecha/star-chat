@@ -18,7 +18,7 @@ const Home: React.FC<Props> = ({ nameRoom, roomExists, isPublic }) => {
   const [cacheNameRoom, setCacheNameRoom] = useStickyState('', 'nameRoom');
 
   useEffect(() => {
-    if (user) {
+    if (user && cacheNameRoom) {
       if (cacheNameRoom !== nameRoom) {
         setUser(null);
       }
