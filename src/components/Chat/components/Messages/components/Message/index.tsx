@@ -1,6 +1,6 @@
 import React from 'react';
-import { Cookie } from '../../../../../../helpers/namespaces/cookie';
 import moment from '../../../../../../helpers/moment';
+import { Cookie } from '../../../../../../helpers/namespaces/cookie';
 
 interface Props {
   data: any;
